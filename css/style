@@ -1,6 +1,6 @@
 body {
     background-color: #eaf6ff;
-    font-family: Arial, "Noto Sans Kannada", sans-serif;
+    font-family: "Noto Sans Kannada", Arial, sans-serif;
     max-width: 1000px;
     margin: auto;
     padding: 20px;
