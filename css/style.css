@@ -16,39 +16,68 @@ body {
 ========================== */
 
 header {
-    text-align: center;
-    padding: 30px 20px;
+    text-align:center;
+    padding:20px;
 }
+
 
 header h1:first-child {
-    font-size: 38px;
-    color: #003366;
-    font-weight: bold;
-    margin-bottom: 5px;
+
+    font-size:30px;
+
+    color:#003366;
+
+    font-weight:bold;
+
+    line-height:1.4;
+
+    margin:5px;
+
 }
 
+
 header h1:nth-child(2) {
-    font-size: 26px;
-    color: #003366;
-    font-weight: normal;
-    margin-top: 0;
+
+    font-size:22px;
+
+    color:#003366;
+
+    font-weight:bold;
+
+    line-height:1.5;
+
+    margin:5px;
+
 }
+
 
 
 /* ==========================
    NAVIGATION
 ========================== */
 
+
 nav {
+
     display:flex;
+
+    flex-direction:row;
+
     justify-content:center;
+
     align-items:flex-start;
+
     flex-wrap:nowrap;
-    margin-top:35px;
+
+    gap:0;
+
+    margin-top:30px;
+
 }
 
 
-/* Each menu column */
+
+/* Each menu item */
 
 .menu-item {
 
@@ -79,6 +108,7 @@ nav {
 }
 
 
+
 /* ==========================
    MENU TEXT
 ========================== */
@@ -92,7 +122,7 @@ nav {
 
     font-weight:bold;
 
-    margin-bottom:8px;
+    margin-bottom:6px;
 
 }
 
@@ -106,6 +136,7 @@ nav {
     font-weight:bold;
 
 }
+
 
 
 /* ==========================
@@ -155,7 +186,7 @@ nav {
 
 
 /* ==========================
-   REGISTER ALUMNI BOX
+   REGISTER ALUMNI HIGHLIGHT
 ========================== */
 
 
@@ -179,7 +210,7 @@ nav {
 
     text-decoration:none;
 
-    box-shadow:0 3px 8px rgba(0,0,0,0.25);
+    box-shadow:0 3px 8px rgba(0,0,0,0.20);
 
     transition:0.3s;
 
@@ -189,20 +220,18 @@ nav {
 
 .register-box:hover {
 
-    background:transparent !important;
+    background:#fff5f5 !important;
 
     color:#b30000 !important;
 
     border-color:#b30000;
-
-    transform:scale(1.05);
 
 }
 
 
 
 /* ==========================
-   LINK BEHAVIOUR
+   LINKS
 ========================== */
 
 
@@ -215,8 +244,6 @@ nav {
 
 .menu-item a:hover {
 
-    opacity:0.8;
-
     text-decoration:underline;
 
 }
@@ -224,7 +251,7 @@ nav {
 
 
 /* ==========================
-   HEADINGS
+   CONTENT
 ========================== */
 
 
@@ -239,15 +266,9 @@ h2 {
 }
 
 
-
-/* ==========================
-   CONTENT
-========================== */
-
-
 .hero {
 
-    padding:30px;
+    padding:20px;
 
 }
 
@@ -255,8 +276,6 @@ h2 {
 .hero h2 {
 
     font-size:32px;
-
-    margin-bottom:20px;
 
 }
 
@@ -323,11 +342,12 @@ footer {
 
 
 /* ==========================
-   MOBILE
+   MOBILE VIEW
 ========================== */
 
 
 @media(max-width:900px){
+
 
     nav {
 
@@ -356,14 +376,14 @@ footer {
 
     header h1:first-child {
 
-        font-size:30px;
+        font-size:24px;
 
     }
 
 
     header h1:nth-child(2) {
 
-        font-size:22px;
+        font-size:20px;
 
     }
 
