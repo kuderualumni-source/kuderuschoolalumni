@@ -396,28 +396,7 @@ footer {
 
     }
 
-}
-/* FORCE HORIZONTAL MENU */
 
-nav {
-    display: flex !important;
-    flex-direction: row !important;
-    justify-content: center !important;
-    align-items: flex-start !important;
-    flex-wrap: nowrap !important;
-}
-
-
-.menu-item {
-    display: inline-block !important;
-    width: 140px !important;
-    text-align: center !important;
-}
-
-
-.menu-item a {
-    display: block !important;
-}
 /* Donation Menu Highlight */
 
 .donation-link {
@@ -425,5 +404,60 @@ nav {
     color:#008000;
 
     font-weight:bold;
+
+}
+@media(max-width:900px){
+
+    body {
+        padding:10px;
+    }
+
+    header h1:first-child {
+        font-size:24px;
+    }
+
+    header h1:nth-child(2) {
+        font-size:18px;
+    }
+
+    nav {
+        flex-direction:column;
+        align-items:center;
+        flex-wrap:wrap;
+        width:100%;
+    }
+
+    .menu-item,
+    .menu-item.register {
+        width:90%;
+        border-right:none;
+        margin-bottom:15px;
+    }
+
+    .kannada {
+        font-size:17px;
+    }
+
+    .english {
+        font-size:14px;
+    }
+
+    h2 {
+        font-size:24px;
+    }
+
+    p {
+        font-size:16px;
+    }
+
+    .gallery {
+        display:grid;
+        grid-template-columns:1fr;
+    }
+
+    .gallery img {
+        width:100%;
+        height:auto;
+    }
 
 }
