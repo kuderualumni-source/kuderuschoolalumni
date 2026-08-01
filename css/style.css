@@ -418,3 +418,12 @@ nav {
 .menu-item a {
     display: block !important;
 }
+/* Donation Menu Highlight */
+
+.donation-link {
+
+    color:#008000;
+
+    font-weight:bold;
+
+}
