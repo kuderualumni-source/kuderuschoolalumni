@@ -110,3 +110,69 @@ footer {
         height:auto;
     }
 }
+/* Website title */
+header h1:first-child {
+    font-size: 38px;
+    color: #003366;
+    margin-bottom: 5px;
+}
+
+header h1:nth-child(2) {
+    font-size: 26px;
+    color: #003366;
+    margin-top: 0;
+}
+
+
+/* Navigation spacing */
+nav {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    display: inline-block;
+    text-align: center;
+    color: #003366;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+
+/* Kannada second line in menu */
+nav a br + * {
+    font-size: 14px;
+}
+
+
+/* Main content English */
+.hero h2 {
+    font-size: 32px;
+    color: #003366;
+    margin-top: 40px;
+}
+
+
+/* Main content Kannada */
+.hero h2:nth-of-type(even) {
+    font-size: 24px;
+}
+
+
+/* Paragraph English */
+.hero p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+
+/* Better separation between English and Kannada */
+.hero h2 {
+    margin-bottom: 20px;
+}
