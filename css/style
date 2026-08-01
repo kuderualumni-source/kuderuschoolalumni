@@ -1,5 +1,5 @@
 body {
-    background-color: #eaf6ff;
+    background-color: #e6f4ff;
     font-family: "Noto Sans Kannada", Arial, sans-serif;
     max-width: 1000px;
     margin: auto;
@@ -7,23 +7,23 @@ body {
     color: #222;
 }
 
-/* Header section */
+/* Header */
 header {
-    background-color: #ffffff;
+    background-color: #e6f4ff;
     color: #003366;
     padding: 35px 20px;
     text-align: center;
-    border-radius: 10px;
 }
 
 header h1 {
     font-size: 36px;
     font-weight: bold;
-    margin: 10px 0 25px;
     color: #003366;
+    margin: 10px 0 25px;
 }
 
-/* Navigation menu */
+
+/* Navigation */
 nav {
     margin-top: 20px;
 }
@@ -45,6 +45,12 @@ nav a:hover {
 
 
 /* Main content */
+.hero {
+    background-color: #e6f4ff;
+    padding: 30px;
+    margin-top: 30px;
+}
+
 h2 {
     color: #003366;
     font-size: 28px;
@@ -53,23 +59,11 @@ h2 {
 
 h3 {
     color: #00509e;
-    font-size: 22px;
-    margin-top: 25px;
 }
 
 p {
     font-size: 18px;
     line-height: 1.8;
-    margin: 20px 0;
-}
-
-
-/* Welcome / Hero section */
-.hero {
-    background-color: #ffffff;
-    padding: 30px;
-    margin-top: 30px;
-    border-radius: 10px;
 }
 
 
@@ -95,28 +89,20 @@ footer {
     padding: 20px;
     text-align: center;
     margin-top: 40px;
-    border-radius: 10px;
 }
 
 
-/* Mobile phone view */
-@media (max-width: 600px) {
-
-    body {
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 28px;
-    }
+/* Mobile */
+@media (max-width:600px) {
 
     nav a {
-        display: block;
-        margin: 12px;
+        display:block;
+        margin:12px;
     }
 
     .gallery img {
-        width: 100%;
-        height: auto;
+        width:100%;
+        height:auto;
     }
+
 }
