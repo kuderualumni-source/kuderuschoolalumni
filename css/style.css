@@ -397,3 +397,24 @@ footer {
     }
 
 }
+/* FORCE HORIZONTAL MENU */
+
+nav {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: flex-start !important;
+    flex-wrap: nowrap !important;
+}
+
+
+.menu-item {
+    display: inline-block !important;
+    width: 140px !important;
+    text-align: center !important;
+}
+
+
+.menu-item a {
+    display: block !important;
+}
