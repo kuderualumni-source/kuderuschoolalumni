@@ -1,4 +1,7 @@
-/* Entire website background */
+/* ==========================
+   BODY
+========================== */
+
 body {
     background-color: #e6f4ff;
     font-family: "Noto Sans Kannada", Arial, sans-serif;
@@ -8,170 +11,287 @@ body {
 }
 
 
-/* Header */
+/* ==========================
+   HEADER
+========================== */
+
 header {
     text-align: center;
     padding: 30px 20px;
-    background-color: transparent;
 }
-
 
 header h1:first-child {
     font-size: 38px;
+    color: #003366;
     font-weight: bold;
-    color: #003366;
-    margin: 10px 0 5px;
-}
-
-
-header h1:nth-child(2) {
-    font-size: 26px;
-    font-weight: normal;
-    color: #003366;
-    margin: 0;
-}
-
-
-/* Navigation menu */
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 35px;
-    gap: 18px;
-}
-
-
-nav a {
-    width: 250px;
-    text-align: center;
-    text-decoration: none;
-    color: #003366;
-    padding: 8px;
-}
-
-
-/* Kannada text (above) */
-.kannada {
-    display: block;
-    font-size: 16px;
-    color: #003366;
     margin-bottom: 5px;
 }
 
-
-/* English text (below, bigger) */
-.english {
-    display: block;
-    font-size: 22px;
-    font-weight: bold;
+header h1:nth-child(2) {
+    font-size: 26px;
     color: #003366;
+    font-weight: normal;
+    margin-top: 0;
 }
 
 
-nav a:hover .english {
-    color: #0066cc;
-    text-decoration: underline;
+/* ==========================
+   NAVIGATION
+========================== */
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    flex-wrap:nowrap;
+    margin-top:35px;
+}
+
+/* Each menu column */
+
+.menu-item{
+
+    width:140px;
+
+    text-align:center;
+
+    padding:0 10px;
+
+    border-right:2px solid #cfcfcf;
+
+}
+
+/* Wider Register column */
+
+.menu-item.register{
+
+    width:230px;
+
+}
+
+.menu-item:last-child{
+
+    border-right:none;
+
 }
 
 
-/* Main headings */
-h2 {
-    color: #003366;
-    font-size: 28px;
-    margin-top: 35px;
+/* Kannada */
+
+.kannada{
+
+    display:block;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+}
+
+/* English */
+
+.english{
+
+    display:block;
+
+    font-size:15px;
+
+    font-weight:bold;
+
 }
 
 
-/* Main content */
-.hero {
-    background-color: transparent;
-    padding: 30px;
+/* Colours */
+
+.home{
+    color:#0056b3;
+}
+
+.about{
+    color:#228B22;
+}
+
+.register-link{
+    color:#d60000;
+}
+
+.gallery-link{
+    color:#7B1FA2;
+}
+
+.events-link{
+    color:#E67E22;
+}
+
+.batches-link{
+    color:#8B4513;
+}
+
+.students-link{
+    color:#008080;
+}
+
+.committee-link{
+    color:#4B0082;
+}
+
+.contact-link{
+    color:#444444;
 }
 
 
-.hero h2 {
-    color: #003366;
-    font-size: 32px;
-    margin-top: 40px;
-    margin-bottom: 20px;
+/* Hover */
+
+.menu-item a{
+
+    text-decoration:none;
+
+}
+
+.menu-item a:hover{
+
+    opacity:0.8;
+
+    text-decoration:underline;
+
 }
 
 
-p {
-    font-size: 18px;
-    line-height: 1.8;
-    margin-bottom: 30px;
+/* ==========================
+   HEADINGS
+========================== */
+
+h2{
+    color:#003366;
+    font-size:28px;
+    margin-top:35px;
 }
 
 
-/* Gallery */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+/* ==========================
+   HERO
+========================== */
+
+.hero{
+    padding:30px;
+}
+
+.hero h2{
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
 }
 
 
-.gallery img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+/* ==========================
+   PARAGRAPHS
+========================== */
+
+p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
 }
 
 
-/* Footer */
-footer {
-    background-color: #0b6fa4;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    margin-top: 40px;
+/* ==========================
+   GALLERY
+========================== */
+
+.gallery{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+.gallery img{
+
+    width:300px;
+
+    height:200px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+
 }
 
 
-/* Mobile view */
-@media(max-width:600px){
+/* ==========================
+   FOOTER
+========================== */
 
-    body {
-        padding: 10px;
+footer{
+
+    background:#0b6fa4;
+
+    color:white;
+
+    padding:20px;
+
+    text-align:center;
+
+    margin-top:40px;
+
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:900px){
+
+    nav{
+
+        flex-wrap:wrap;
+
     }
 
+    .menu-item{
 
-    header h1:first-child {
-        font-size: 30px;
+        width:45%;
+
+        border-right:none;
+
+        margin-bottom:20px;
+
     }
 
+    .menu-item.register{
 
-    header h1:nth-child(2) {
-        font-size: 22px;
+        width:90%;
+
     }
 
+    header h1:first-child{
 
-    nav a {
-        width: 100%;
+        font-size:30px;
+
     }
 
+    header h1:nth-child(2){
 
-    .hero {
-        padding: 10px;
+        font-size:22px;
+
     }
 
+    .gallery img{
 
-    .gallery img {
-        width: 100%;
-        height: auto;
+        width:100%;
+
+        height:auto;
+
     }
 
-}
-/* Highlight Register Alumni */
-.register-link {
-    color: #d60000 !important;
-    font-weight: bold;
-}
-
-.register-link:hover {
-    color: #ff0000 !important;
-    text-decoration: underline;
 }
