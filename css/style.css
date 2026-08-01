@@ -325,3 +325,13 @@ footer{
     }
 
 }
+/* Register Alumni */
+
+.register-link{
+    color:#d60000 !important;
+    font-weight:bold;
+}
+
+.register-link:hover{
+    color:#ff0000 !important;
+}
