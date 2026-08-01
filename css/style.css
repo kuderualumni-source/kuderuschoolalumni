@@ -113,8 +113,38 @@ nav{
     color:#228B22;
 }
 
-.register-link{
-    color:#d60000;
+/* Register Alumni Highlight Box */
+
+.register-box{
+
+    display:block;
+
+    background:#d60000;
+
+    color:white !important;
+
+    padding:8px 12px;
+
+    margin:4px;
+
+    border-radius:8px;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+    box-shadow:0 3px 8px rgba(0,0,0,0.25);
+
+    transition:0.3s;
+
+}
+
+.register-box:hover{
+
+    background:#b30000;
+
+    transform:scale(1.05);
+
 }
 
 .gallery-link{
